@@ -226,7 +226,7 @@ p {
     <img class="mySlides" src="images/Destiny2.png" style="width:100% ; border-radius: 8px;">
     <img class="mySlides" src="images/valorant.jpeg" style="width:100%; border-radius: 8px;">
     <div class="overlay">
-    <div class="text"><a href="https://jalah07.github.io/Lab07/Lab_07/" target=“_blank” style="color: white; font-size: 2.3vw; text-decoration: none" onclick="return confirm('Are you sure, you want to leave this page?')"> See Other Featured Games Here</a>
+    <div class="text"><a href="https://jalah07.github.io/Lab08/Lab_08/" target=“_blank” style="color: white; font-size: 2.3vw; text-decoration: none" onclick="return confirm('Are you sure, you want to leave this page?')"> See Other Featured Games Here</a>
       
     </div>
   </div>
@@ -447,11 +447,6 @@ p {
           // Checking if the button was clicked
           if (!event.target.matches("#button")) return;
         
-          /*
-          Here we send a request to the Joke API
-          Then process the response into JSON
-          Then pass the data to our renderJoke function.
-          */
           fetch("https://official-joke-api.appspot.com/random_joke")
             .then((response) => response.json())
             .then((data) => renderJoke(data))
